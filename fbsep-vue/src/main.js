@@ -38,8 +38,8 @@ var app2 = new Vue({
     console.log(error);
   });*/
 
-//var url="http://localhost:3000/api/hello";
-var url="http://192.168.138.134:3000/api/hello";
+//var url="http://localhost:3000/api/hello"; //本地环境使用此url
+var url="http://192.168.138.134:3000/api/hello"; //生产环境使用此url
 axios.get(url)
   .then(function (response) {
     console.log(response);
